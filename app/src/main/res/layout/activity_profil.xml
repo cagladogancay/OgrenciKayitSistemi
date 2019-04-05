@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@color/colorBackground">
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_linked_camera_black_24dp"/>
+
+    <ListView
+        android:id="@+id/lv_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"></ListView>
+
+    <EditText
+        android:id="@+id/et_lessonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ders adı"
+        android:textColorHint="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="20sp"
+
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/border_edittext"
+        android:layout_margin="8dp"
+        />
+    <Button
+        android:id="@+id/btn_Add_Lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ders Ekle"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
+
+
